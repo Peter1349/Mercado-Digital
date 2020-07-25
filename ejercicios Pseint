@@ -1,0 +1,109 @@
+ejercicios Pseint
+
+1.área círculo
+Algoritmo áreacírculo
+	Definir area, radio, PII Como Real;
+	PII = 3.1416;
+	
+	Escribir "Escribe el valor del radio del círculo";
+	Leer radio;
+	
+	area = PII * (radio * radio);
+	
+	Escribir "El área del círculo es:  ", area;
+	
+FinAlgoritmo
+
+2.área rectángulo
+Algoritmo arearectangulo
+	
+	Definir base, altura Como Real;
+	Escribir "Dame la base del rectángulo";
+	Leer base;
+	Escribir "Dame la altura del rectángulo";
+	Leer altura;
+	
+	area = base * altura;
+	
+	Escribir "El área del rectángulo es: " ,area;
+		
+FinAlgoritmo
+
+3. área triángulo
+Algoritmo área_triángulo
+	Definir area, base, altura Como Real;
+	Escribir "Dame la base del triángulo";
+	Leer base;
+	Escribir "Dame la altura del triángulo";
+	Leer altura
+	
+	area = (base*altura)/2;
+	Escribir "El área del triángulo es: ", area;
+	
+FinAlgoritmo
+
+4. Promedio notas
+Algoritmo promedionotas
+	Definir x, n, nota, suma, promedio Como Real;
+	Escribir "cuántas notas deseas promediar";
+	Leer n;
+	x = 1;
+	Mientras x <= n Hacer
+		Escribir "escribe una nota"
+		Leer nota
+		suma = suma + nota
+		x = x+1
+	Fin Mientras
+	
+	promedio = suma /n;
+	Escribir "el promedio de las " ,n, "notas es: " ,promedio;
+	
+FinAlgoritmo
+
+5.sueldo hombre
+Algoritmo sueldohombre
+	Definir horas, extra Como Entero;
+	Definir pagohoras, sueldo, sueldoextra, sueldototal Como Real;
+	Escribir "Escribe el pago por horas";
+	Leer pagohoras;
+	Escribir "Dame las horas trabajadas de la semana";
+	Leer horas;
+	
+	si horas > 48 Entonces
+		extra = horas - 48
+		sueldo = pagohoras * 48
+		sueldoextra = (extra * pagohoras) *2
+		sueldototal = sueldo + sueldoextra
+	SiNo
+		sueldototal = pagohoras + horas
+	FinSi
+	
+	Escribir "Tu sueldo semanal por ",horas "horas trabajadas es:  ",sueldototal;
+FinAlgoritmo
+
+6.suma de números
+Algoritmo sumadeNúmeros
+	Definir x,total,n,suma Como Real;
+	Escribir "Cuántos números deseas sumar";
+	Leer total;
+	para x = 1 hasta total Hacer
+		Escribir "Dame número" ,x
+		Leer n
+		suma = suma + n
+	FinPara
+	Escribir "La suma de los " ,total, "números es: " ,suma;
+FinAlgoritmo
+
+7. tipo de cambio
+Algoritmo tipodecambio
+	Definir sol, dolar, conversion Como Real;
+	Escribir "Dame una cantidad en soles";
+	Leer sol;
+	Escribir "Dame el precio del dolar";
+	Leer dolar;
+	
+	conversion = sol / dolar;
+	
+	Escribir "El tipo de cambio de ", sol, "soles convertidos a dólares es: ",conversion;
+	
+FinAlgoritmo
